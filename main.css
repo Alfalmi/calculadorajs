@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Raleway:wght@600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    
+    background-color: rgb(30, 31, 31);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: aliceblue;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: rgb(155, 33, 12);
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+button {
+font-family: 'Raleway', sans-serif;
+cursor: pointer;
+margin: 5px;
+padding: 0;
+border-radius: 9px;
+font-size: 1.5em;
+border: none;
+background-color: #d9ff0269;
+box-shadow: 5px 5px 10px -3px rgba(70, 56, 54, .2), -5px -5px 10px 3px rgba(70, 56, 54, .2);
+
+
+
+}
+
+button:active {
+    background-color: #c00505ec;
+}
+
+button:focus {
+    outline: none;
+}
+.display {
+    font-family: 'DotGothic16', sans-serif;
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(5, 5, 5);
+    border-radius: 9px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px rgb(59, 25, 25);
+
+}
+
+#boton-doble {
+    grid-column: span 2;
+}
+
+.valor-actual {
+    font-size: 1.5em;
+}
+
+.valor-anterior {
+    font-size: 2em;
+}
